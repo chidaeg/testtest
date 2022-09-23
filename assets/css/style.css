@@ -1,0 +1,216 @@
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  line-height: 1.5;
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  color: #333333;
+  font-size: 1.6rem;
+  font-family: "Noto Sans JP", sans-serif, "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+  min-width: 350px;
+  margin: 0 auto;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+img,
+video,
+object {
+  max-width: 100%;
+  height: auto;
+  border: none;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+
+a:hover img {
+  text-decoration: none;
+  opacity: 0.8;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+li {
+  list-style: none;
+}
+
+.l-header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 999;
+  background-color: #fff;
+  height: 8rem;
+  padding: 10px;
+}
+.l-header__content {
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+}
+
+.l-section {
+  padding: 0 2rem;
+}
+
+.c-inner {
+  max-width: 1096px;
+  margin: 0 auto;
+}
+
+.c-btn {
+  display: block;
+  width: 20rem;
+  height: 4.8rem;
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #fff;
+  background: green;
+  padding: 1rem;
+  border-radius: 2.4rem;
+  -webkit-box-shadow: 0px 3px 6px gray;
+          box-shadow: 0px 3px 6px gray;
+  text-align: center;
+}
+
+.p-fv {
+  display: block;
+  width: 100%;
+  padding-top: 10rem;
+}
+.p-fv__catch {
+  font-size: 2rem;
+}
+.p-fv__title {
+  padding: 10rem 2rem 12rem;
+  background: url("https://placehold.jp/350x350.png") center/cover no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: bold;
+  font-size: 2.8rem;
+  position: relative;
+  z-index: 99;
+}
+.p-fv__img {
+  position: absolute;
+  bottom: -50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-25%);
+          transform: translateX(-50%) translateY(-25%);
+  outline: 1px solid #333333;
+  z-index: 9;
+}
+.p-fv__list {
+  background-color: rgb(106, 73, 73);
+}
+.p-fv__listItems {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  position: relative;
+  z-index: 99;
+  padding-top: 8rem;
+}
+.p-fv__listItems li {
+  background: #fff;
+  border: 2px solid #333333;
+  height: 12rem;
+  width: 16rem;
+  border-radius: 4.5rem 0 0 0;
+  padding: 2.4rem 1.6rem 1.6rem 2.4rem;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+.p-fv__underline {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, transparent), color-stop(50%, yellow));
+  background: linear-gradient(transparent 50%, yellow 50%);
+  line-height: 1;
+}
+.p-fv__note {
+  font-size: 1.2rem;
+  color: #fff;
+  padding: 0.5rem 0 1rem 1rem;
+}
+
+.p-faq .js-accordion__active {
+  visibility: inherit;
+  max-height: 50rem;
+  -webkit-transition: visibility 0.3s, max-height 0.3s;
+  transition: visibility 0.3s, max-height 0.3s;
+  padding: 2.3rem 8.7rem 2.3rem 3.5rem;
+}
+@media (max-width: 992px) {
+  .p-faq .js-accordion__active {
+    padding: 2.3rem 3.5rem;
+  }
+}
+@media (max-width: 576px) {
+  .p-faq .js-accordion__active {
+    padding: 2.3rem 2.4rem;
+  }
+}
+
+.js-scroll__target {
+  opacity: 0;
+  -webkit-transform: translate3d(0, 30px, 0);
+          transform: translate3d(0, 30px, 0);
+}
+
+.js-scroll__target.is-active {
+  opacity: 1;
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+/*--------------------------------------*
+* foundation
+*--------------------------------------*/
+/*--------------------------------------*
+* layout
+*--------------------------------------*/
+/*--------------------------------------*
+* object
+*--------------------------------------*/
+/*-------------------
+* component
+-------------------*/
+/*-------------------
+* project
+-------------------*/
+/*-------------------
+* Utility
+-------------------*/
+/*-------------------
+* Program
+-------------------*/
+/*# sourceMappingURL=style.css.map */
