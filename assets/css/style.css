@@ -17,11 +17,12 @@ html {
 body {
   color: #663300;
   font-size: 1.6rem;
-  font-family: "Helvetica", "Zen Kaku Gothic Antique", "Noto Sans JP", "Hiragino Kaku Gothic ProN", "Arial", "Yu Gothic", "Meiryo", "DIN Alternate", "Kozuka Mincho Pro", sans-serif;
+  font-family: "Noto Sans JP", "Hiragino Kaku Gothic ProN", "Arial", "Yu Gothic", "Meiryo", "DIN Alternate", "Kozuka Mincho Pro", sans-serif;
   min-width: 350px;
   margin: 0 auto;
   width: 100%;
   overflow-x: hidden;
+  max-width: 640px;
 }
 
 img,
@@ -52,12 +53,13 @@ li {
 }
 
 .l-header {
-  width: 100%;
+  width: 18rem;
   top: 0;
   z-index: 999;
   background-color: #ffffff;
   height: 8rem;
   padding: 10px;
+  position: relative;
 }
 .l-header__content {
   text-align: center;
@@ -67,44 +69,73 @@ li {
   height: 100%;
 }
 .l-header__logo {
-  width: 19rem;
-  height: 7rem;
+  width: 16rem;
+  height: 100%;
+  margin: 0 auto;
+  padding: 1.5rem 0;
 }
 
 .l-footer {
   background-color: #ffffff;
 }
-.l-footer c-inner {
-  padding-top: 3.6rem;
-  text-align: center;
-  font-weight: bold;
-}
-.l-footer__nav ul {
+.l-footer__content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 2.9rem;
-  -webkit-box-pack: right;
-      -ms-flex-pack: right;
-          justify-content: right;
+  padding: 0 2rem;
+  gap: 2rem;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.l-footer__logo img {
+  min-width: 11.5rem;
+  height: auto;
+  margin-bottom: 1.4rem;
+}
+.l-footer__img img {
+  min-width: 28.5rem;
+  height: auto;
+}
+.l-footer__nav ul {
+  width: 28rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
   margin-bottom: 2rem;
+  font-size: 1.2rem;
 }
 .l-footer__nav ul li {
   text-align: left;
 }
 .l-footer small {
+  background-color: #009933;
   font-weight: normal;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
+  color: #ffffff;
   text-align: center;
-}
-
-.l-section {
-  padding: 0 2rem;
+  height: 4rem;
+  display: block;
+  line-height: 4rem;
 }
 
 .c-inner {
   max-width: 640px;
   margin: 0 auto;
+  padding: 0 2rem;
 }
 
 .c-btn {
@@ -125,99 +156,70 @@ li {
 
 .c-sectionTitle {
   margin: 0 auto;
-}
-.c-sectionTitle__title {
-  font-size: 3.2rem;
-  line-height: 1.44;
-  font-weight: bold;
-  margin-bottom: 1rem;
   text-align: center;
 }
-@media (max-width: 992px) {
-  .c-sectionTitle__title {
-    font-size: 2.4rem;
-  }
-}
 .c-sectionTitle__en {
-  font-size: 1.6rem;
-  color: #ff9900;
+  font-size: 2.1rem;
+  font-family: "DIN Alternate", "Noto Sans JP", "Hiragino Kaku Gothic ProN", "Arial", "Yu Gothic", "Meiryo", sans-serif;
+  line-height: 1.2;
   font-weight: bold;
+  text-transform: uppercase;
+}
+.c-sectionTitle__jp {
+  font-size: 6rem;
+  font-weight: bold;
+  display: inline-block;
+  border-top: 1px solid #663300;
 }
 
 .p-fv {
-  display: block;
   width: 100%;
-}
-.p-fv__catch {
-  font-size: 2rem;
-}
-.p-fv__title {
-  padding: 10rem 2rem 12rem;
-  background: url("https://placehold.jp/350x350.png") center/cover no-repeat;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  font-weight: bold;
-  font-size: 2.8rem;
-  position: relative;
-  z-index: 99;
-}
-.p-fv__img {
   position: absolute;
-  bottom: -50%;
-  left: 50%;
-  -webkit-transform: translateX(-50%) translateY(-25%);
-          transform: translateX(-50%) translateY(-25%);
-  outline: 1px solid #663300;
-  z-index: 9;
+  top: 0;
+  display: block;
+  height: 90rem;
 }
-.p-fv__list {
-  background-color: rgb(106, 73, 73);
-}
-.p-fv__listItems {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  position: relative;
-  z-index: 99;
-  padding-top: 8rem;
-}
-.p-fv__listItems li {
-  background: #ffffff;
-  border: 2px solid #663300;
-  height: 12rem;
-  width: 16rem;
-  border-radius: 4.5rem 0 0 0;
-  padding: 2.4rem 1.6rem 1.6rem 2.4rem;
-  font-size: 1.4rem;
-  font-weight: bold;
-}
-.p-fv__underline {
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, transparent), color-stop(50%, yellow));
-  background: linear-gradient(transparent 50%, yellow 50%);
-  line-height: 1;
-}
-.p-fv__note {
-  font-size: 1.2rem;
-  color: #ffffff;
-  padding: 0.5rem 0 1rem 1rem;
+.p-fv__height {
+  margin-top: 82rem;
 }
 
+.p-cta {
+  padding-top: 3rem;
+  background: -webkit-gradient(linear, left top, left bottom, from(#fdf7ed), color-stop(20%, transparent));
+  background: linear-gradient(#fdf7ed, transparent 20%);
+}
+.p-cta__bgBase {
+  background: #ffffff;
+}
+.p-cta__bgYellow {
+  background: -webkit-gradient(linear, left top, left bottom, from(#ffffcc), color-stop(20%, transparent));
+  background: linear-gradient(#ffffcc, transparent 20%);
+}
 .p-cta__heading img {
-  margin: 3rem auto 0;
+  margin: 0 auto;
   width: 30rem;
   height: 5.6rem;
 }
 .p-cta__btn {
-  margin-top: 2rem;
+  margin: 2rem auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: "Helvetica", "Zen Kaku Gothic Antique", "Arial", "Yu Gothic", "Meiryo", sans-serif;
+}
+.p-cta__btn::after {
+  content: "";
+  display: block;
+  width: 3.4rem;
+  height: 2.8rem;
+  background: url("../../assets/img/btn-arrow.svg") center/contain no-repeat;
+  margin-left: 2.4rem;
 }
 
 .p-campaign {
@@ -232,9 +234,11 @@ li {
 .p-campaign__titleJp {
   border-bottom: 1px solid #663300;
   font-weight: bold;
+  font-family: "Helvetica", "Zen Kaku Gothic Antique", "Arial", "Yu Gothic", "Meiryo", sans-serif;
 }
 .p-campaign__titleEn {
   text-transform: uppercase;
+  font-family: "DIN Alternate", "Noto Sans JP", "Hiragino Kaku Gothic ProN", "Arial", "Yu Gothic", "Meiryo", sans-serif;
 }
 .p-campaign__heading {
   margin: 2.8rem auto 0;
@@ -280,6 +284,7 @@ li {
 .p-reason {
   padding: 7.6rem 0 5rem;
   margin: 0 auto;
+  background: #ffffcc;
 }
 .p-reason__list {
   display: -webkit-box;
@@ -317,12 +322,22 @@ li {
 .p-lineup__gridWrapper {
   margin-top: 4rem;
   display: grid;
-  grid-template-columns: 19rem 19rem 19rem;
-  grid-template-rows: 19rem 19rem 19rem 19rem 19rem;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
   gap: 1.3rem;
 }
 .p-lineup__gridItem {
   position: relative;
+}
+.p-lineup__img::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(60%, transparent), to(rgba(0, 0, 0, 0.7)));
+  background: linear-gradient(transparent 60%, rgba(0, 0, 0, 0.7));
 }
 .p-lineup__name {
   font-size: 2.2rem;
@@ -331,53 +346,79 @@ li {
   position: absolute;
   left: 0;
   bottom: 0;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  margin: 0 0 6px 4px;
 }
 
-.p-works.l-section {
-  padding: 5.5rem 2rem 9rem;
-  overflow: hidden;
+.p-voices {
+  padding: 9rem 0 8.8rem;
+  background: #fdf7ed;
 }
-.p-works .c-inner {
-  max-width: 107.8rem;
+.p-voices__cardUnit {
+  margin-top: 8.6rem;
+  font-family: "Helvetica", "Hiragino Kaku Gothic ProN", "Arial", "Yu Gothic", "Meiryo", sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 3rem;
 }
-@media (max-width: 992px) {
-  .p-works .c-inner {
-    max-width: 32rem;
-  }
-}
-.p-works .c-sectionTitle {
-  margin-bottom: 6.8rem;
-}
-.p-works__cardUnit {
+.p-voices__card {
+  padding: 2.6rem 1.8rem 2.6rem 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #ffffff;
 }
-.p-works__card {
-  border: 1px solid gray;
-  border-radius: 8px;
+.p-voices__cardHeading {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  border-left: 15px solid #663300;
+  padding-left: 0.6rem;
+  font-size: 2.4rem;
+  line-height: 1.2;
   font-weight: bold;
 }
-.p-works_cardImg {
-  width: 32.2rem;
-  height: 21rem;
-  -o-object-fit: cover;
-     object-fit: cover;
+.p-voices__cardHeading p {
+  height: 6.2rem;
 }
-.p-works__cardText {
-  padding: 1.8rem 1.8rem 0;
+.p-voices__cardtext {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  font-size: 1.8rem;
+  color: #2F3232;
 }
-.p-works__cardHeading {
-  margin-bottom: 3rem;
-  line-height: 1.5;
+.p-voices__content {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 3rem;
 }
-.p-works__cardDetail {
-  font-size: 1.4rem;
-  line-height: 1.43;
-  margin-bottom: 4rem;
+.p-voices__imgWrapper {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  text-align: center;
+}
+.p-voices__img img {
+  margin: 0 auto;
 }
 
 .p-compare {
@@ -385,133 +426,129 @@ li {
   margin: 0 auto;
 }
 
-.p-works.l-section {
-  padding: 5.5rem 2rem 9rem;
-  overflow: hidden;
+.p-shopping {
+  padding: 8rem 0;
+  background: #ffffcc;
 }
-.p-works .c-inner {
-  max-width: 107.8rem;
-}
-@media (max-width: 992px) {
-  .p-works .c-inner {
-    max-width: 32rem;
-  }
-}
-.p-works .c-sectionTitle {
-  margin-bottom: 6.8rem;
-}
-.p-works__cardUnit {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-.p-works__card {
-  border: 1px solid gray;
-  border-radius: 8px;
+.p-shopping__intro {
+  margin-top: 2.4rem;
+  text-align: center;
   font-weight: bold;
+  font-size: 2.1rem;
+  line-height: 1.14;
 }
-.p-works_cardImg {
-  width: 32.2rem;
-  height: 21rem;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-.p-works__cardText {
-  padding: 1.8rem 1.8rem 0;
-}
-.p-works__cardHeading {
-  margin-bottom: 3rem;
-  line-height: 1.5;
-}
-.p-works__cardDetail {
-  font-size: 1.4rem;
-  line-height: 1.43;
-  margin-bottom: 4rem;
+.p-shopping__content {
+  margin-top: 6.5rem;
 }
 
 .p-faq {
-  padding-top: 5.5rem;
-  padding-bottom: 8.6rem;
+  padding: 6rem 0 6.8rem;
 }
-.p-faq .c-sectionTitle {
-  margin-bottom: 3.2rem;
-}
-.p-faq__table {
-  font-weight: bold;
-  font-size: 1.4rem;
-  line-height: 1.65;
-  max-width: 90.7rem;
-  margin: 0 auto;
-}
-.p-faq__table dt, .p-faq__table dd {
-  border: 1px solid gray;
-}
-.p-faq__table dt {
+.p-faq__title {
   text-align: center;
-  height: 5.8rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 1.6rem;
+  margin-top: 5.6rem;
+  font-size: 4.4rem;
+  font-weight: bold;
+  line-height: 1.1;
+}
+.p-faq__accordion {
+  margin-top: 5rem;
+}
+.p-faq__accordion dl {
+  font-size: 2.1rem;
+}
+.p-faq__accordion dl :first-child {
+  margin-top: 0;
+}
+.p-faq__accordion dt {
+  height: 5.5rem;
+  border: 1px solid #663300;
+  border-radius: 10px 0 0 0;
+  line-height: 5.5rem;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
   cursor: pointer;
+  margin-top: 1.4rem;
+  padding: 0 2.5rem 0 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
 }
-@media (max-width: 576px) {
-  .p-faq__table dt {
-    min-height: 5.8rem;
-    height: auto;
-  }
+.p-faq__accordion dt ::after {
+  content: "";
+  display: block;
+  width: 1.6rem;
+  height: 1.6rem;
+  border-left: 2.5px solid #663300;
+  border-bottom: 2.5px solid #663300;
+  -webkit-transform: rotate(-45deg) translateY(-50%);
+          transform: rotate(-45deg) translateY(-50%);
+  position: absolute;
+  right: 2.4rem;
+  top: 50%;
 }
-.p-faq__table dd {
-  background-color: darkgray;
+.p-faq__accordion dt.is-active span::after {
+  -webkit-transform: rotate(135deg);
+          transform: rotate(135deg);
+}
+.p-faq__accordion dt.is-active + dd {
+  visibility: inherit;
+  -webkit-transition: visibility 0.2s, max-height 0.1s;
+  transition: visibility 0.2s, max-height 0.1s;
+  padding: 1rem;
+}
+.p-faq__accordion dd {
   color: #663300;
   visibility: hidden;
   max-height: 0;
   border: none;
 }
-
-.p-faq .js-accordion__active {
-  visibility: inherit;
-  max-height: 50rem;
-  -webkit-transition: visibility 0.3s, max-height 0.3s;
-  transition: visibility 0.3s, max-height 0.3s;
-  padding: 2.3rem 8.7rem 2.3rem 3.5rem;
-}
-@media (max-width: 992px) {
-  .p-faq .js-accordion__active {
-    padding: 2.3rem 3.5rem;
-  }
-}
-@media (max-width: 576px) {
-  .p-faq .js-accordion__active {
-    padding: 2.3rem 2.4rem;
-  }
+.p-faq__number {
+  font-family: "DIN Alternate", "Noto Sans JP", "Hiragino Kaku Gothic ProN", "Arial", "Yu Gothic", "Meiryo", sans-serif;
+  margin-right: 2rem;
 }
 
-.js-scroll__target {
-  opacity: 0;
-  -webkit-transform: translate3d(0, 30px, 0);
-          transform: translate3d(0, 30px, 0);
+.p-contact {
+  padding: 8.2rem 0 6.8rem;
+  text-align: center;
 }
-
-.js-scroll__target.is-active {
-  opacity: 1;
-  -webkit-transform: translate3d(0, 0, 0);
-          transform: translate3d(0, 0, 0);
-  -webkit-transition: 1s;
-  transition: 1s;
+.p-contact__text {
+  font-size: 2.4rem;
+}
+.p-contact__phone {
+  font-size: 5.8rem;
+  line-height: 1;
+  margin-top: 2.8rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: "DIN Alternate", "Noto Sans JP", "Hiragino Kaku Gothic ProN", "Arial", "Yu Gothic", "Meiryo", sans-serif;
+}
+.p-contact__phone::before {
+  content: "";
+  display: block;
+  width: 5.6rem;
+  height: 5.6rem;
+  background: url("../../assets/img/contact-phone.svg") center/contain no-repeat;
+  margin-right: 1rem;
+}
+.p-contact__detail {
+  font-size: 1.9rem;
+  font-family: "Helvetica", "Hiragino Kaku Gothic ProN", "Arial", "Yu Gothic", "Meiryo", sans-serif;
+  margin-top: 1.4rem;
+}
+.p-contact__btn {
+  margin-top: 4rem;
+  background: #ff9900;
 }
 
 /*--------------------------------------*
