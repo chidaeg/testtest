@@ -139,6 +139,7 @@ li {
   background-color: #009933;
   font-weight: normal;
   font-size: 1.3rem;
+  font-family: "DIN Alternate", "Noto Sans JP", "Hiragino Kaku Gothic ProN", "Arial", "Yu Gothic", "Meiryo", sans-serif;
   color: #ffffff;
   text-align: center;
   height: 4rem;
@@ -158,7 +159,6 @@ li {
   max-width: 52rem;
   height: 12rem;
   font-size: 3.6rem;
-  font-weight: bold;
   color: #ffffff;
   background: #009933;
   padding: 1rem 2rem;
@@ -167,7 +167,9 @@ li {
           box-shadow: 0px 3px 6px gray;
   text-align: center;
   margin: 0 auto;
-  letter-spacing: -0.1em;
+  letter-spacing: -0.05em;
+  font-family: "DIN Alternate", "Zen Kaku Gothic Antique", "Arial", "Yu Gothic", "Meiryo", sans-serif;
+  font-weight: 900;
 }
 .c-btn:hover {
   opacity: 0.8;
@@ -190,18 +192,22 @@ li {
   font-size: 2.1rem;
   font-family: "DIN Alternate", "Noto Sans JP", "Hiragino Kaku Gothic ProN", "Arial", "Yu Gothic", "Meiryo", sans-serif;
   line-height: 1.2;
+  letter-spacing: 0.1em;
   font-weight: bold;
   text-transform: uppercase;
+  margin-bottom: 0.6rem;
 }
 .c-sectionTitle__jp {
   font-size: 6rem;
   font-weight: bold;
   display: inline-block;
-  border-top: 1px solid #663300;
+  border-top: 2px solid #663300;
+  line-height: 1.25;
 }
 
 .p-fv {
   width: 100%;
+  max-width: 64rem;
   position: absolute;
   top: 0;
   display: block;
@@ -228,7 +234,7 @@ li {
   height: 5rem;
 }
 .p-cta__btn {
-  margin: 2rem auto;
+  margin: 2.4rem auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -238,7 +244,6 @@ li {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  font-family: "DIN Alternate", "Zen Kaku Gothic Antique", "Arial", "Yu Gothic", "Meiryo", sans-serif;
 }
 .p-cta__btn::after {
   content: "";
@@ -268,7 +273,10 @@ li {
      object-position: bottom;
 }
 .p-cta__img__short img {
-  height: 15.7rem;
+  height: 15rem;
+}
+.p-cta__pt {
+  padding-top: 8rem;
 }
 
 .p-campaign {
@@ -284,7 +292,7 @@ li {
 }
 .p-campaign__titleJp {
   border-bottom: 2px solid #663300;
-  font-weight: bold;
+  font-weight: 900;
   font-family: "DIN Alternate", "Zen Kaku Gothic Antique", "Arial", "Yu Gothic", "Meiryo", sans-serif;
 }
 .p-campaign__titleEn {
@@ -296,11 +304,11 @@ li {
 .p-campaign__heading {
   margin: 2.8rem auto 0;
   color: #ffffff;
-  font-weight: bold;
   font-size: 3.6rem;
   max-width: 46.6rem;
   height: 11rem;
-  letter-spacing: -0.1em;
+  font-family: "DIN Alternate", "Zen Kaku Gothic Antique", "Arial", "Yu Gothic", "Meiryo", sans-serif;
+  font-weight: 900;
   line-height: 1.2;
   background: url("../../assets/img/campaign-heading-bg@2x-8.png");
   display: -webkit-box;
@@ -411,10 +419,10 @@ li {
 
 .p-lineup {
   background-color: #fdf7ed;
-  padding-top: 3rem;
+  padding: 3rem 0 4.4rem;
 }
 .p-lineup__gridWrapper {
-  margin-top: 4rem;
+  margin-top: 4.4rem;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
@@ -434,7 +442,7 @@ li {
   background: linear-gradient(transparent 60%, rgba(0, 0, 0, 0.7));
 }
 .p-lineup__name {
-  font-size: 2.2rem;
+  font-size: 2.1rem;
   color: #ffffff;
   font-weight: bold;
   position: absolute;
@@ -444,7 +452,9 @@ li {
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
-  margin: 0 0 6px 4px;
+  margin: 0 0 0.5rem 0.5rem;
+  line-height: 1.1;
+  letter-spacing: 0.01em;
 }
 @media (max-width: 576px) {
   .p-lineup__name {
@@ -454,10 +464,10 @@ li {
 
 .p-voices {
   padding: 9rem 0 8.8rem;
-  background: #fdf7ed;
+  background: url("../../assets/img/voices-bg@2x-80.jpg") center/contain;
 }
 .p-voices__cardUnit {
-  margin-top: 8.6rem;
+  margin-top: 8rem;
   font-family: "Helvetica", "Hiragino Kaku Gothic ProN", "Arial", "Yu Gothic", "Meiryo", sans-serif;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -466,10 +476,10 @@ li {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 3rem;
+  gap: 3.2rem;
 }
 .p-voices__card {
-  padding: 2.6rem 1.8rem 2.6rem 1rem;
+  padding: 2.3rem 1.6rem 2.3rem 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -502,6 +512,7 @@ li {
   font-size: 2.4rem;
   line-height: 1.2;
   font-weight: bold;
+  letter-spacing: -0.02em;
 }
 .p-voices__cardHeading p {
   height: 6.2rem;
@@ -511,6 +522,8 @@ li {
       flex-basis: 50%;
   font-size: 1.8rem;
   color: #2F3232;
+  line-height: 1.33;
+  letter-spacing: -0.05em;
 }
 .p-voices__content {
   -ms-flex-preferred-size: 50%;
@@ -535,33 +548,37 @@ li {
 }
 
 .p-compare {
-  padding-top: 6.2rem;
+  padding-top: 9.5rem;
   margin: 0 auto;
+}
+.p-compare__content {
+  margin: 2.5rem 0 8.1rem;
 }
 
 .p-shopping {
-  padding: 8rem 0;
+  padding: 8rem 0 7rem;
   background: #ffffcc;
 }
 .p-shopping__intro {
-  margin-top: 2.4rem;
+  margin-top: 1.4rem;
   text-align: center;
   font-weight: bold;
   font-size: 2.1rem;
-  line-height: 1.14;
+  line-height: 1.2;
+  letter-spacing: 0.01em;
 }
 .p-shopping__content {
-  margin-top: 6.5rem;
+  margin-top: 5.3rem;
 }
 
 .p-faq {
-  padding: 6rem 0 6.8rem;
+  padding: 6.6rem 0 6.8rem;
 }
 .p-faq__title {
   text-align: center;
   margin-top: 5.6rem;
   font-size: 4.4rem;
-  font-weight: bold;
+  font-weight: 900;
   line-height: 1.1;
 }
 @media (max-width: 576px) {
@@ -572,13 +589,16 @@ li {
 .p-faq__accordion {
   margin-top: 5rem;
 }
+.p-faq__accordion dl {
+  font-weight: bold;
+}
 .p-faq__accordion dl :first-child {
   margin-top: 0;
 }
 .p-faq__accordion dt {
   font-size: 2.1rem;
   min-height: 5.5rem;
-  border: 1px solid #663300;
+  border: 0.75px solid #663300;
   border-radius: 10px 0 0 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -591,7 +611,7 @@ li {
       -ms-user-select: none;
           user-select: none;
   cursor: pointer;
-  margin-top: 1.4rem;
+  margin-top: 2.2rem;
   padding: 1.6rem 5.5rem 1.6rem 3rem;
   display: flex;
   position: relative;
@@ -622,25 +642,29 @@ li {
   visibility: inherit;
   -webkit-transition: visibility 0.2s, max-height 0.1s;
   transition: visibility 0.2s, max-height 0.1s;
-  padding: 1rem;
+  padding: 3.4rem;
 }
 .p-faq__accordion dd {
   color: #663300;
   visibility: hidden;
   max-height: 0;
-  border: none;
+  border: 0.75px solid #663300;
+  border-top: none;
+  background: #fdf7ed;
 }
 .p-faq__number {
   font-family: "DIN Alternate", "Noto Sans JP", "Hiragino Kaku Gothic ProN", "Arial", "Yu Gothic", "Meiryo", sans-serif;
+  font-weight: bold;
   margin-right: 2rem;
 }
 
 .p-contact {
-  padding: 8.2rem 0 6.8rem;
+  padding: 6.6rem 0 6.8rem;
   text-align: center;
 }
 .p-contact__text {
   font-size: 2.4rem;
+  font-weight: bold;
 }
 @media (max-width: 576px) {
   .p-contact__text {
@@ -650,7 +674,7 @@ li {
 .p-contact__phone {
   font-size: 5.8rem;
   line-height: 1;
-  margin-top: 2.8rem;
+  margin-top: 2.5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -676,9 +700,11 @@ li {
   }
 }
 .p-contact__detail {
-  font-size: 1.9rem;
+  font-size: 1.7rem;
+  font-weight: bold;
   font-family: "Helvetica", "Hiragino Kaku Gothic ProN", "Arial", "Yu Gothic", "Meiryo", sans-serif;
-  margin-top: 1.4rem;
+  margin-top: 0.5rem;
+  line-height: 1.2;
 }
 @media (max-width: 576px) {
   .p-contact__detail {
