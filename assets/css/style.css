@@ -2,49 +2,49 @@
   font-family: "notosans";
   font-style: normal;
   font-weight: 400;
-  src: url("../font/notosansNormal.woff2") format("woff2"), url("../font/notosansNormal.woff") format("woff"), url("../font/notosansNormal.ttf") format("truetype");
+  src: url("../font/notosansNormal.woff") format("woff"), url("../font/notosansNormal.ttf") format("truetype");
 }
 @font-face {
   font-family: "notosans";
   font-style: medium;
   font-weight: 500;
-  src: url("../font/notosansMedium.woff2") format("woff2"), url("../font/notosansMedium.woff") format("woff"), url("../font/notosansMedium.ttf") format("truetype");
+  src: url("../font/notosansMedium.woff") format("woff"), url("../font/notosansMedium.ttf") format("truetype");
 }
 @font-face {
   font-family: "notosans";
   font-style: bold;
   font-weight: 700;
-  src: url("../font/notosansBold.woff2") format("woff2"), url("../font/notosansBold.woff") format("woff"), url("../font/notosansBold.ttf") format("truetype");
+  src: url("../font/notosansBold.woff") format("woff"), url("../font/notosansBold.ttf") format("truetype");
 }
 @font-face {
   font-family: "notosans";
   font-style: black;
   font-weight: 900;
-  src: url("../font/notosansBlack.woff2") format("woff2"), url("../font/notosansBlack.woff") format("woff"), url("../font/notosansBlack.ttf") format("truetype");
+  src: url("../font/notosansBlack.woff") format("woff"), url("../font/notosansBlack.ttf") format("truetype");
 }
 @font-face {
   font-family: "zenkaku";
-  font-style: regular;
+  font-style: normal;
   font-weight: 400;
-  src: url("../font/zenkakuRegular.woff2") format("woff2"), url("../font/zenkakuRegular.woff") format("woff"), url("../font/zenkakuRegular.ttf") format("truetype");
+  src: url("../font/zenkakuRegular.woff") format("woff"), url("../font/zenkakuRegular.ttf") format("truetype");
 }
 @font-face {
   font-family: "zenkaku";
   font-style: medium;
   font-weight: 500;
-  src: url("../font/zenkakuMedium.woff2") format("woff2"), url("../font/zenkakuMedium.woff") format("woff"), url("../font/zenkakuMedium.ttf") format("truetype");
+  src: url("../font/zenkakuMedium.woff") format("woff"), url("../font/zenkakuMedium.ttf") format("truetype");
 }
 @font-face {
   font-family: "zenkaku";
   font-style: bold;
   font-weight: 700;
-  src: url("../font/zenkakuBold.woff2") format("woff2"), url("../font/zenkakuBold.woff") format("woff"), url("../font/zenkakuBold.ttf") format("truetype");
+  src: url("../font/zenkakuBold.woff") format("woff"), url("../font/zenkakuBold.ttf") format("truetype");
 }
 @font-face {
   font-family: "zenkaku";
   font-style: black;
   font-weight: 700;
-  src: url("../font/zenkakuBlack.woff2") format("woff2"), url("../font/zenkakuBlack.woff") format("woff"), url("../font/zenkakuBlack.ttf") format("truetype");
+  src: url("../font/zenkakuBlack.woff") format("woff"), url("../font/zenkakuBlack.ttf") format("truetype");
 }
 *,
 *:before,
@@ -420,6 +420,7 @@ li {
   margin-top: 2.3rem;
   color: #231815;
   font-weight: 500;
+  font-weight: bold;
   line-height: 1.5;
   letter-spacing: -0.03em;
   text-align: left;
