@@ -1,3 +1,51 @@
+@font-face {
+  font-family: "notosans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../font/notosansNormal.woff2") format("woff2"), url("../font/notosansNormal.woff") format("woff"), url("../font/notosansNormal.ttf") format("truetype");
+}
+@font-face {
+  font-family: "notosans";
+  font-style: medium;
+  font-weight: 500;
+  src: url("../font/notosansMedium.woff2") format("woff2"), url("../font/notosansMedium.woff") format("woff"), url("../font/notosansMedium.ttf") format("truetype");
+}
+@font-face {
+  font-family: "notosans";
+  font-style: bold;
+  font-weight: 700;
+  src: url("../font/notosansBold.woff2") format("woff2"), url("../font/notosansBold.woff") format("woff"), url("../font/notosansBold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "notosans";
+  font-style: black;
+  font-weight: 900;
+  src: url("../font/notosansBlack.woff2") format("woff2"), url("../font/notosansBlack.woff") format("woff"), url("../font/notosansBlack.ttf") format("truetype");
+}
+@font-face {
+  font-family: "zenkaku";
+  font-style: regular;
+  font-weight: 400;
+  src: url("../font/zenkakuRegular.woff2") format("woff2"), url("../font/zenkakuRegular.woff") format("woff"), url("../font/zenkakuRegular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "zenkaku";
+  font-style: medium;
+  font-weight: 500;
+  src: url("../font/zenkakuMedium.woff2") format("woff2"), url("../font/zenkakuMedium.woff") format("woff"), url("../font/zenkakuMedium.ttf") format("truetype");
+}
+@font-face {
+  font-family: "zenkaku";
+  font-style: bold;
+  font-weight: 700;
+  src: url("../font/zenkakuBold.woff2") format("woff2"), url("../font/zenkakuBold.woff") format("woff"), url("../font/zenkakuBold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "zenkaku";
+  font-style: black;
+  font-weight: 700;
+  src: url("../font/zenkakuBlack.woff2") format("woff2"), url("../font/zenkakuBlack.woff") format("woff"), url("../font/zenkakuBlack.ttf") format("truetype");
+}
 *,
 *:before,
 *:after {
@@ -17,7 +65,7 @@ html {
 body {
   color: #663300;
   font-size: 1.6rem;
-  font-family: "Noto Sans JP", "Hiragino Kaku Gothic ProN", "Arial", "Yu Gothic", "Meiryo", "DIN Alternate", "Kozuka Mincho Pro", sans-serif;
+  font-family: "notosans", "Hiragino Kaku Gothic ProN", "Arial", "Yu Gothic", "Meiryo", "DIN Alternate", "Kozuka Mincho Pro", sans-serif;
   min-width: 350px;
   margin: 0 auto;
   width: 100%;
@@ -154,7 +202,7 @@ li {
   background-color: #009933;
   font-weight: normal;
   font-size: 1.3rem;
-  font-family: "DIN Alternate", "Noto Sans JP", "Hiragino Kaku Gothic ProN", "Arial", "Yu Gothic", "Meiryo", sans-serif;
+  font-family: "DIN Alternate", "notosans", "Hiragino Kaku Gothic ProN", "Arial", "Yu Gothic", "Meiryo", sans-serif;
   color: #ffffff;
   text-align: center;
   height: 4rem;
@@ -183,7 +231,7 @@ li {
   text-align: center;
   margin: 0 auto;
   letter-spacing: -0.05em;
-  font-family: "DIN Alternate", "Zen Kaku Gothic Antique", "Arial", "Yu Gothic", "Meiryo", sans-serif;
+  font-family: "DIN Alternate", "zenkaku", "Arial", "Yu Gothic", "Meiryo", sans-serif;
   font-weight: 900;
 }
 .c-btn:hover {
@@ -205,16 +253,16 @@ li {
 }
 .c-sectionTitle__en {
   font-size: 2.1rem;
-  font-family: "DIN Alternate", "Noto Sans JP", "Hiragino Kaku Gothic ProN", "Arial", "Yu Gothic", "Meiryo", sans-serif;
+  font-family: "DIN Alternate", "notosans", "Hiragino Kaku Gothic ProN", "Arial", "Yu Gothic", "Meiryo", sans-serif;
   line-height: 1.2;
   letter-spacing: 0.1em;
-  font-weight: bold;
+  font-weight: 900;
   text-transform: uppercase;
   margin-bottom: 0.6rem;
 }
 .c-sectionTitle__jp {
   font-size: 6rem;
-  font-weight: bold;
+  font-weight: 900;
   display: inline-block;
   border-top: 2px solid #663300;
   line-height: 1.25;
@@ -233,7 +281,7 @@ li {
   display: block;
 }
 .p-fv__height {
-  margin-top: min(86rem, 135vw);
+  margin-top: min(86rem, 124vw);
 }
 
 .p-cta {
@@ -301,7 +349,7 @@ li {
 
 .p-campaign {
   background-color: #fdf7ed;
-  padding-bottom: 3rem;
+  padding-bottom: 0.5rem;
 }
 .p-campaign__title {
   width: 28rem;
@@ -313,11 +361,11 @@ li {
 .p-campaign__titleJp {
   border-bottom: 2px solid #663300;
   font-weight: 900;
-  font-family: "DIN Alternate", "Zen Kaku Gothic Antique", "Arial", "Yu Gothic", "Meiryo", sans-serif;
+  font-family: "DIN Alternate", "zenkaku", "Arial", "Yu Gothic", "Meiryo", sans-serif;
 }
 .p-campaign__titleEn {
   text-transform: uppercase;
-  font-family: "DIN Alternate", "Noto Sans JP", "Hiragino Kaku Gothic ProN", "Arial", "Yu Gothic", "Meiryo", sans-serif;
+  font-family: "DIN Alternate", "notosans", "Hiragino Kaku Gothic ProN", "Arial", "Yu Gothic", "Meiryo", sans-serif;
   letter-spacing: 0.1em;
   line-height: 1.1;
 }
@@ -327,9 +375,9 @@ li {
   font-size: 3.6rem;
   max-width: 46.6rem;
   height: 11rem;
-  font-family: "DIN Alternate", "Zen Kaku Gothic Antique", "Arial", "Yu Gothic", "Meiryo", sans-serif;
   font-weight: 900;
   line-height: 1.2;
+  letter-spacing: -0.1em;
   background: url("../../assets/img/campaign-heading-bg@2x-8.png");
   display: -webkit-box;
   display: -ms-flexbox;
@@ -352,8 +400,8 @@ li {
   height: 6rem;
 }
 .p-campaign__content {
-  margin-top: 3.3rem;
-  letter-spacing: -0.05em;
+  margin-top: 3.6rem;
+  letter-spacing: -0.03em;
   line-height: 1.36;
   text-align: center;
   font-size: 3rem;
@@ -371,9 +419,9 @@ li {
   font-size: 1.6rem;
   margin-top: 2.3rem;
   color: #231815;
-  font-weight: medium;
+  font-weight: 500;
   line-height: 1.5;
-  letter-spacing: 0.01em;
+  letter-spacing: -0.03em;
   text-align: left;
 }
 .p-campaign__note :last-child {
@@ -385,10 +433,10 @@ li {
   }
 }
 .p-campaign__list {
-  margin-top: 2.6rem;
+  margin: 2.6rem auto 3.5rem;
 }
 .p-campaign__listItem {
-  margin: 0 auto 3.5rem;
+  margin: 0 auto;
   width: 84%;
   -o-object-fit: cover;
      object-fit: cover;
@@ -405,12 +453,15 @@ li {
 }
 
 .p-reason {
-  padding: 7.2rem 0 5rem;
+  padding: 5rem 0;
   margin: 0 auto;
   background: #ffffcc;
 }
+.p-reason .c-inner {
+  padding: 0;
+}
 .p-reason__wrapper {
-  margin-top: 3.2rem;
+  padding: 0 2rem;
 }
 .p-reason__list {
   display: -webkit-box;
@@ -447,11 +498,16 @@ li {
   background-color: #fdf7ed;
   padding: 3rem 0 4.4rem;
 }
+@media (max-width: 576px) {
+  .p-lineup .c-inner {
+    padding: 0 1rem;
+  }
+}
 .p-lineup__gridWrapper {
   margin-top: 4.4rem;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(5, 1fr);
   gap: 1.3rem;
 }
 .p-lineup__gridItem {
@@ -494,7 +550,6 @@ li {
 }
 .p-voices__cardUnit {
   margin-top: 8rem;
-  font-family: "Helvetica", "Hiragino Kaku Gothic ProN", "Arial", "Yu Gothic", "Meiryo", sans-serif;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -537,7 +592,7 @@ li {
   padding-left: 0.6rem;
   font-size: 2.4rem;
   line-height: 1.2;
-  font-weight: bold;
+  font-weight: 900;
   letter-spacing: -0.02em;
 }
 .p-voices__cardHeading p {
@@ -632,13 +687,14 @@ li {
   margin-top: 5rem;
 }
 .p-faq__accordion dl {
-  font-weight: bold;
+  font-weight: 500;
 }
 .p-faq__accordion dl :first-child {
   margin-top: 0;
 }
 .p-faq__accordion dt {
   font-size: 2.1rem;
+  font-weight: 500;
   min-height: 5.5rem;
   border: 0.75px solid #663300;
   border-radius: 10px 0 0 0;
@@ -662,6 +718,7 @@ li {
   .p-faq__accordion dt {
     font-size: 3.5vw;
     padding: 1rem 2.5rem 1rem 1rem;
+    margin-top: 1.4rem;
   }
 }
 .p-faq__accordion dt ::after {
@@ -673,6 +730,10 @@ li {
   border-bottom: 2.5px solid #663300;
   -webkit-transform: rotate(-45deg) translateY(-50%);
           transform: rotate(-45deg) translateY(-50%);
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
   position: absolute;
   right: 2.4rem;
   top: 50%;
@@ -684,32 +745,45 @@ li {
     height: 1.2rem;
   }
 }
+.p-faq__accordion dd {
+  padding: 0 3.4rem;
+  height: 0;
+  line-height: 0;
+  overflow: hidden;
+  font-size: 1.8rem;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  color: #663300;
+  opacity: 0;
+  border: 0.75px solid transparent;
+  border-top: none;
+  background: #fdf7ed;
+}
+@media (max-width: 576px) {
+  .p-faq__accordion dd {
+    padding: 0 1.6rem;
+    font-size: max(1.2rem, 3vw);
+  }
+}
 .p-faq__accordion dt.is-active span::after {
   -webkit-transform: rotate(135deg);
           transform: rotate(135deg);
 }
-.p-faq__accordion dt.is-active + dd {
-  visibility: inherit;
-  -webkit-transition: visibility 0.2s, max-height 0.1s;
-  transition: visibility 0.2s, max-height 0.1s;
-  padding: 3.4rem;
-}
-@media (max-width: 576px) {
-  .p-faq__accordion dt.is-active + dd {
-    padding: 1.6rem;
-    font-size: 3.5vw;
-  }
-}
-.p-faq__accordion dd {
-  color: #663300;
-  visibility: hidden;
-  max-height: 0;
+.p-faq__accordion dd.is-open {
   border: 0.75px solid #663300;
   border-top: none;
-  background: #fdf7ed;
+  line-height: 1.5;
+  opacity: 1;
+  padding: 3.4rem;
+  height: auto;
+}
+@media (max-width: 576px) {
+  .p-faq__accordion dd.is-open {
+    padding: 1.6rem;
+  }
 }
 .p-faq__number {
-  font-family: "DIN Alternate", "Noto Sans JP", "Hiragino Kaku Gothic ProN", "Arial", "Yu Gothic", "Meiryo", sans-serif;
+  font-family: "DIN Alternate", "notosans", "Hiragino Kaku Gothic ProN", "Arial", "Yu Gothic", "Meiryo", sans-serif;
   font-weight: bold;
   margin-right: 2rem;
 }
@@ -745,7 +819,7 @@ li {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  font-family: "DIN Alternate", "Noto Sans JP", "Hiragino Kaku Gothic ProN", "Arial", "Yu Gothic", "Meiryo", sans-serif;
+  font-family: "DIN Alternate", "notosans", "Hiragino Kaku Gothic ProN", "Arial", "Yu Gothic", "Meiryo", sans-serif;
 }
 .p-contact__phone::before {
   content: "";
