@@ -298,8 +298,8 @@ li {
   background: #ffffff;
 }
 .p-cta__bgYellow {
-  background: -webkit-gradient(linear, left top, left bottom, from(#ffffcc), color-stop(20%, transparent));
-  background: linear-gradient(#ffffcc, transparent 20%);
+  background: -webkit-gradient(linear, left top, left bottom, from(#fff7da), color-stop(20%, transparent));
+  background: linear-gradient(#fff7da, transparent 20%);
 }
 .p-cta__heading img {
   margin: 0 auto;
@@ -460,15 +460,12 @@ li {
 }
 
 .p-reason {
-  padding: 5rem 0 4.5rem;
+  padding: 7rem 0 4.5rem;
   margin: 0 auto;
-  background: #ffffcc;
-}
-.p-reason .c-inner {
-  padding: 0;
+  background: #fff7da;
 }
 .p-reason__wrapper {
-  padding: 0 2rem;
+  margin-top: 3rem;
 }
 .p-reason__list {
   display: -webkit-box;
@@ -491,7 +488,6 @@ li {
 }
 .p-reason__note {
   margin-top: 2rem;
-  font-size: 1.5rem;
   line-height: 1.3;
   font-weight: bold;
 }
@@ -547,7 +543,7 @@ li {
 }
 
 .p-voices {
-  padding: 9rem 0 6rem;
+  padding: 6rem 0;
   background: url("../../assets/img/voices-bg@2x-80.jpg") center/cover no-repeat;
 }
 .p-voices__cardUnit {
@@ -568,7 +564,7 @@ li {
 }
 
 .p-compare {
-  padding: 9.5rem 0 8.1rem;
+  padding: 4rem 0 8.1rem;
   margin: 0 auto;
   background: #fdf7ed;
 }
@@ -577,8 +573,8 @@ li {
 }
 
 .p-shopping {
-  padding: 8rem 0 7rem;
-  background: #ffffcc;
+  padding: 8rem 0 9rem;
+  background: #fff7da;
 }
 .p-shopping__intro {
   margin-top: 1.4rem;
@@ -598,7 +594,7 @@ li {
 }
 
 .p-faq {
-  padding: 6.6rem 0 6.8rem;
+  padding: 6.6rem 0 0;
 }
 .p-faq__title {
   text-align: center;
