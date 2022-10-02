@@ -182,7 +182,7 @@ li {
   background-color: #009933;
   font-weight: normal;
   font-size: 1.3rem;
-  font-family: "DIN Alternate", "notosans", "Hiragino Kaku Gothic ProN", "Arial", "Yu Gothic", "Meiryo", sans-serif;
+  font-family: "din-2014", "notosans", "Hiragino Kaku Gothic ProN", "Arial", "Yu Gothic", "Meiryo", sans-serif;
   color: #ffffff;
   text-align: center;
   display: block;
@@ -222,7 +222,7 @@ li {
   text-align: center;
   margin: 0 auto;
   letter-spacing: -0.05em;
-  font-family: "DIN Alternate", "zenkaku", "Arial", "Yu Gothic", "Meiryo", sans-serif;
+  font-family: "din-2014", "zenkaku", "Arial", "Yu Gothic", "Meiryo", sans-serif;
   font-weight: 900;
 }
 .c-btn:hover {
@@ -244,7 +244,7 @@ li {
 }
 .c-sectionTitle__en {
   font-size: 2.1rem;
-  font-family: "DIN Alternate", "notosans", "Hiragino Kaku Gothic ProN", "Arial", "Yu Gothic", "Meiryo", sans-serif;
+  font-family: "din-2014", "notosans", "Hiragino Kaku Gothic ProN", "Arial", "Yu Gothic", "Meiryo", sans-serif;
   line-height: 1.2;
   letter-spacing: 0.1em;
   font-weight: 900;
@@ -367,11 +367,11 @@ li {
 .p-campaign__titleJp {
   border-bottom: 2px solid #663300;
   font-weight: 900;
-  font-family: "DIN Alternate", "zenkaku", "Arial", "Yu Gothic", "Meiryo", sans-serif;
+  font-family: "din-2014", "zenkaku", "Arial", "Yu Gothic", "Meiryo", sans-serif;
 }
 .p-campaign__titleEn {
   text-transform: uppercase;
-  font-family: "DIN Alternate", "notosans", "Hiragino Kaku Gothic ProN", "Arial", "Yu Gothic", "Meiryo", sans-serif;
+  font-family: "din-2014", "notosans", "Hiragino Kaku Gothic ProN", "Arial", "Yu Gothic", "Meiryo", sans-serif;
   letter-spacing: 0.1em;
   line-height: 1.1;
 }
@@ -710,8 +710,8 @@ li {
   }
 }
 .p-faq__number {
-  font-family: "DIN Alternate", "notosans", "Hiragino Kaku Gothic ProN", "Arial", "Yu Gothic", "Meiryo", sans-serif;
-  font-weight: bold;
+  font-family: "din-2014", "notosans", "Hiragino Kaku Gothic ProN", "Arial", "Yu Gothic", "Meiryo", sans-serif;
+  font-weight: 600;
   margin-right: 2rem;
 }
 @media (max-width: 576px) {
@@ -747,7 +747,8 @@ li {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  font-family: "DIN Alternate", "notosans", "Hiragino Kaku Gothic ProN", "Arial", "Yu Gothic", "Meiryo", sans-serif;
+  font-family: "din-2014", "notosans", "Hiragino Kaku Gothic ProN", "Arial", "Yu Gothic", "Meiryo", sans-serif;
+  font-weight: 600;
 }
 .p-contact__phone::before {
   content: "";
@@ -763,6 +764,10 @@ li {
   font-family: "Helvetica", "Hiragino Kaku Gothic ProN", "Arial", "Yu Gothic", "Meiryo", sans-serif;
   margin-top: 0.5rem;
   line-height: 1.2;
+}
+.p-contact__hour {
+  font-family: "din-2014", "notosans", "Hiragino Kaku Gothic ProN", "Arial", "Yu Gothic", "Meiryo", sans-serif;
+  font-weight: 600;
 }
 .p-contact__btn {
   margin-top: min(6vw, 4rem);
