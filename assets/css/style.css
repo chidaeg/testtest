@@ -208,33 +208,21 @@ li {
 }
 
 .c-btn {
-  display: block;
-  width: 52rem;
-  max-width: 52rem;
-  height: 12rem;
-  font-size: 3.6rem;
-  color: #ffffff;
-  background: #009933;
-  padding: 1rem 2rem;
-  border-radius: 6rem;
-  -webkit-box-shadow: 0px 3px 6px gray;
-          box-shadow: 0px 3px 6px gray;
-  text-align: center;
-  margin: 0 auto;
-  letter-spacing: -0.05em;
-  font-family: "din-2014", "zenkaku", "Arial", "Yu Gothic", "Meiryo", sans-serif;
-  font-weight: 900;
+  width: min(90vw, 57rem);
+  margin: -1rem auto 0.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .c-btn:hover {
   opacity: 0.8;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
 }
 @media (max-width: 576px) {
   .c-btn {
-    font-size: 6vw;
-    height: 20vw;
-    width: 86vw;
+    margin-top: 0;
   }
 }
 
@@ -274,13 +262,13 @@ li {
 }
 
 .p-cta {
-  padding-top: 6rem;
+  padding-top: 5rem;
   background: -webkit-gradient(linear, left top, left bottom, from(#fdf7ed), color-stop(20%, transparent));
   background: linear-gradient(#fdf7ed, transparent 20%);
 }
 @media (max-width: 576px) {
   .p-cta {
-    padding-top: 2rem;
+    padding-top: 3rem;
   }
 }
 .p-cta__bgBase {
@@ -295,43 +283,12 @@ li {
   width: min(27rem, 42vw);
   height: auto;
 }
-.p-cta__btn {
-  margin: 2rem auto 0.5rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-.p-cta__btn::after {
-  content: "";
-  display: block;
-  width: 3.4rem;
-  height: 2.8rem;
-  background: url("../../assets/img/btn-arrow.svg") center/contain no-repeat;
-  margin-left: 2.4rem;
-}
-@media (max-width: 576px) {
-  .p-cta__btn {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  .p-cta__btn::after {
-    margin-left: 4vw;
-    width: 5.6vw;
-  }
-}
 .p-cta__img {
-  margin-top: 5.5rem;
+  margin-top: 2rem;
 }
 @media (max-width: 576px) {
   .p-cta__img {
-    margin-top: 3rem;
+    margin-top: 1rem;
   }
 }
 .p-cta__img img {
@@ -342,7 +299,12 @@ li {
      object-position: bottom;
 }
 .p-cta__img__short {
-  margin-top: 0;
+  margin-top: -3.5rem;
+}
+@media (max-width: 576px) {
+  .p-cta__img__short {
+    margin-top: -3rem;
+  }
 }
 .p-cta.u-pt__40 {
   padding-top: 4rem;
@@ -721,7 +683,7 @@ li {
 }
 
 .p-contact {
-  padding: 7rem 0 7.7rem;
+  padding: 6rem 0 2rem;
   text-align: center;
 }
 .p-contact__text {
@@ -770,10 +732,8 @@ li {
   font-weight: 600;
   font-size: min(3.1vw, 2rem);
 }
-.p-contact__btn {
-  margin-top: min(6vw, 4rem);
-  background: #ff9900;
-  letter-spacing: 0.01em;
+.p-contact .c-btn {
+  margin-top: 1.5rem;
 }
 
 /*--------------------------------------*
